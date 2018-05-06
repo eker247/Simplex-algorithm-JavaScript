@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Simplex.js - Drozd, Fornagiel, Oleksy</title>
+	<link rel="stylesheet" type="text/css" href="css/simplex.css" />
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="div_authors">
+		<h3 id="h3_authors">
+		PWSZ Nowy Sącz</h3>
+		<br /><br /><br />
+	</div>
+	<div id="div_title">
+		<h1 id="h1_title">Algorytm simplex</h1>
+	</div>
+
+	<div id="form_vars">
+		<form id="formularz" class="" action="simplex.html" method="post">
+			<label for="variables">Liczba zmiennych: </label>
+			<input type="number" name="variables" value="0"><br />
+			<label for="constraints">Liczba ograniczeń: </label>
+			<input type="number" name="constraints" value="0"><br />
+		</form>
+	</div>
+
+	<div id="div_button_generateMatrix">
+		<button type="button" id="button_generateMatrix"
+		onclick="document.getElementById('div_form_input').innerHTML = generateMatrix()">
+		Generuj macierz do obliczeń</button>
+	</div>
+
+	<div id="div_form_input"></div>
+
+
+
+</body>
+</html>

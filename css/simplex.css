@@ -1,0 +1,100 @@
+body {
+    background-color: azure;
+}
+
+#div_authors {
+    background-color: rgb(91, 140, 249);
+    padding: 0px 0px 2px 10px;
+    text-align: left;
+}
+
+#h3_authors {
+    position: relative;
+    animation-name: authors;
+    animation-duration: 2s;
+}
+
+@media (max-width: 850px) {
+    #h3_authors {
+        visibility: hidden;
+    }
+}
+
+@keyframes authors {
+    0%    { left: 120%; }
+    100%  { left: 0% }
+}
+
+#div_title {
+    position: relative;
+    top: -100px;
+    padding: 2px 0px 2px 0px;
+    text-align: center;
+}
+
+#h1_title {
+    position: relative;
+    animation-name: title;
+    animation-duration: 2s;
+}
+
+@keyframes title {
+    0%    { left: -70%; }
+    100%  { left: 0%; }
+}
+
+#form_vars {
+    position: relative;
+    top: -60px;
+}
+
+#div_button_generateMatrix {
+    position: relative;
+    top: -70px;
+    padding: 5px 5px 5px 5px;
+}
+
+#div_form_input {
+    position: relative;
+    top: -60px;
+}
+
+.form_number {
+    width: 60px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#price_row {
+    background-color: gold;
+}
+
+#goal_row {
+    background-color: silver;
+}
+
+#base_col {
+    background-color: #8ed495;
+}
+
+#constraints_col {
+    background-color: #da6e6e;
+}
+
+#zj_row {
+    background-color: #a6a6a6;
+}
+
+#dj_row {
+    background-color: #aed76a;
+}
+
+#fmax {
+    background-color: gold;
+}
